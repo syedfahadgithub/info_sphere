@@ -12,7 +12,7 @@
     
     <div class="col-md-9">
         <h3>All Posts</h3>
-        <a href="" class="btn btn-dark text-light float-right mb-2">Add New Post</a>
+        <a href="{%url 'add_posts'%}" class="btn btn-dark text-light float-right mb-2">Add New Post</a>
         <table class="table">
             <thead>
                 <tr>
@@ -35,8 +35,7 @@
                     <td>{{ post.status }}</td>
                     <td>{% if post.is_featured%} <i class="fa fa-check text-success"></i>  {% else %} <i class="fa fa-times text-danger"></i> {% endif %}</td>
                     <td>
-                        <a href=""><i class="fa fa-edit text-success"></i></a>&nbsp;&nbsp;
-                        <a href="{% url 'delete_posts' post.id}"><i class="fa fa-trash text-danger"></i></a>
+                        <a href="{% url 'delete_posts' post.id %}"><i class="fa fa-trash text-danger"></i></a>
                     </td>
                 </tr>
                 {% endfor %}
@@ -47,3 +46,5 @@
     </div>
 </div>
 {% endblock %}
+                  <!-- for edit post <a href="{% url 'edit_posts' post.id %}"><i class="fa fa-edit text-success"></i></a>&nbsp;&nbsp;-->     
+
