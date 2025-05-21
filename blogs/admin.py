@@ -16,7 +16,7 @@ class BlogAdmin(admin.ModelAdmin):
 
 
 
-
+admin.site.site_header = ("The Info Sphere Admin Portal ")
 admin.site.register(Category,CategoryAdmin)
 admin.site.register(Blogs,BlogAdmin)
 admin.site.register(Comment)

@@ -1,9 +1,15 @@
 /* static/css/blog.css */
+/* Apply the Roboto font globally */
 body {
-    font-family: 'Playfair Display', serif !important;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif !important;
-  }
-  
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Apply Roboto to headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* You can apply it to other specific elements if needed */
+p {
+    font-family: 'Roboto', sans-serif;
+}
